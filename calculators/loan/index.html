@@ -4,18 +4,19 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Loan / EMI Calculator</title>
-<meta name="description" content="Monthly EMI, total interest and total payment for any loan.">
+<title>Loan / EMI Calculator | FreeConvert</title>
+<meta name="description" content="Monthly EMI, total interest and total payment for any loan. Includes the formula, a worked example and an instant browser-based result.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://zackkaz.github.io/calculators/loan/">
-<meta property="og:title" content="Loan / EMI Calculator"><meta property="og:description" content="Monthly EMI, total interest and total payment for any loan."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/loan/">
+<meta property="og:title" content="Loan / EMI Calculator | FreeConvert"><meta property="og:description" content="Monthly EMI, total interest and total payment for any loan. Includes the formula, a worked example and an instant browser-based result."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/loan/"><meta property="og:site_name" content="FreeConvert">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Loan / EMI Calculator">
-<meta name="twitter:description" content="Monthly EMI, total interest and total payment for any loan.">
+<meta name="twitter:title" content="Loan / EMI Calculator | FreeConvert">
+<meta name="twitter:description" content="Monthly EMI, total interest and total payment for any loan. Includes the formula, a worked example and an instant browser-based result.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calc.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
+<script src="/assets/calc.js" defer></script>
 
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://zackkaz.github.io/#calc"}, {"@type": "ListItem", "position": 3, "name": "Loan / EMI Calculator", "item": "https://zackkaz.github.io/calculators/loan/"}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -26,6 +27,7 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
@@ -34,14 +36,21 @@ if ("serviceWorker" in navigator) {
     <a href="/#calc">Calculators</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/#calc">Calculators</a> › <a href="https://zackkaz.github.io/calculators/loan/">Loan / EMI Calculator</a></nav>
 <h1>Loan / EMI Calculator</h1>
 <p class="lede">Monthly EMI, total interest and total payment for any loan.</p>
-<div class="card calc"><label>Loan amount</label><input id='a' type='number' value='10000'><label>Annual rate %</label><input id='r' type='number' value='8'><label>Years</label><input id='y' type='number' value='5'>
+<div class="card calc"><label for="a">Loan amount</label><input id='a' type='number' value='10000'><label for="r">Annual rate %</label><input id='r' type='number' value='8'><label for="y">Years</label><input id='y' type='number' value='5'>
 <button class="btn" onclick="runCalc(loan,'lout')">Calculate EMI</button>
-<div class="out" id="lout"></div>
-</div><div class="ad"><script type="text/javascript">atOptions = {key:"YOUR_ADSTERRA_KEY_HERE", format:"iframe", height:250, width:300, params:{}};(function(){var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];g.src="https://cdn.adsterra.com/asyncjs.php"; s.parentNode.insertBefore(g,s);})();</script></div>
-<h2>How it works</h2><p>Monthly EMI, total interest and total payment for any loan. This free calculator runs entirely in your browser — no data leaves your device.</p>
+<div class="out" id="lout" aria-live="polite"></div>
+</div>
+<h2>Formula</h2>
+<div class="formula"><strong>EMI = P × r × (1 + r)ⁿ ÷ ((1 + r)ⁿ − 1)</strong><span>P is principal, r is the monthly interest rate and n is the number of monthly payments. Results are estimates and may differ from a lender’s fees or rounding.</span></div>
+<h2>Worked example</h2><p>For a 10,000 loan at 8% annually over 5 years, r is the monthly rate and n is 60 monthly payments.</p>
+<h2>How this calculator works</h2>
+<p>Monthly EMI, total interest and total payment for any loan. The calculation runs entirely in your browser, so the values you enter are not sent to a server.</p>
+<h2>Using the result</h2>
+<p>Check that your inputs use the intended units and assumptions. Round only the final result so intermediate rounding does not introduce avoidable error.</p>
 </main>
 <footer><div class="wrap">
   <div>© 2026 FreeConvert — free unit converters & calculators.</div>

@@ -4,18 +4,19 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Age Calculator</title>
-<meta name="description" content="Your exact age in years and days.">
+<title>Age Calculator | FreeConvert</title>
+<meta name="description" content="Your exact age in years and days. Includes the formula, a worked example and an instant browser-based result.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://zackkaz.github.io/calculators/age/">
-<meta property="og:title" content="Age Calculator"><meta property="og:description" content="Your exact age in years and days."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/age/">
+<meta property="og:title" content="Age Calculator | FreeConvert"><meta property="og:description" content="Your exact age in years and days. Includes the formula, a worked example and an instant browser-based result."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/age/"><meta property="og:site_name" content="FreeConvert">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Age Calculator">
-<meta name="twitter:description" content="Your exact age in years and days.">
+<meta name="twitter:title" content="Age Calculator | FreeConvert">
+<meta name="twitter:description" content="Your exact age in years and days. Includes the formula, a worked example and an instant browser-based result.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calc.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
+<script src="/assets/calc.js" defer></script>
 
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://zackkaz.github.io/#calc"}, {"@type": "ListItem", "position": 3, "name": "Age Calculator", "item": "https://zackkaz.github.io/calculators/age/"}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -26,6 +27,7 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
@@ -34,14 +36,21 @@ if ("serviceWorker" in navigator) {
     <a href="/#calc">Calculators</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/#calc">Calculators</a> › <a href="https://zackkaz.github.io/calculators/age/">Age Calculator</a></nav>
 <h1>Age Calculator</h1>
 <p class="lede">Your exact age in years and days.</p>
-<div class="card calc"><label>Date of birth</label><input id='dob' type='date' value='1995-06-15'>
+<div class="card calc"><label for="dob">Date of birth</label><input id='dob' type='date' value='1995-06-15'>
 <button class="btn" onclick="runCalc(age,'aout')">Calculate age</button>
-<div class="out" id="aout"></div>
-</div><div class="ad"><script type="text/javascript">atOptions = {key:"YOUR_ADSTERRA_KEY_HERE", format:"iframe", height:250, width:300, params:{}};(function(){var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];g.src="https://cdn.adsterra.com/asyncjs.php"; s.parentNode.insertBefore(g,s);})();</script></div>
-<h2>How it works</h2><p>Your exact age in years and days. This free calculator runs entirely in your browser — no data leaves your device.</p>
+<div class="out" id="aout" aria-live="polite"></div>
+</div>
+<h2>Formula</h2>
+<div class="formula"><strong>Approximate age = elapsed days ÷ 365.25</strong><span>The decimal-year figure is an estimate based on 365.25 days per year; the total elapsed days is also shown.</span></div>
+<h2>Worked example</h2><p>The calculator measures elapsed time from the birth date to today and reports years and total days.</p>
+<h2>How this calculator works</h2>
+<p>Your exact age in years and days. The calculation runs entirely in your browser, so the values you enter are not sent to a server.</p>
+<h2>Using the result</h2>
+<p>Check that your inputs use the intended units and assumptions. Round only the final result so intermediate rounding does not introduce avoidable error.</p>
 </main>
 <footer><div class="wrap">
   <div>© 2026 FreeConvert — free unit converters & calculators.</div>

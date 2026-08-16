@@ -4,18 +4,19 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kelvin to Celsius — Convert Temperature</title>
-<meta name="description" content="Free Kelvin to Celsius converter. Exact temperature conversion with a live calculator and common values.">
+<title>Kelvin to Celsius Converter (K to °C) | FreeConvert</title>
+<meta name="description" content="Convert kelvin to celsius. 1 K = -272.15 °C. Includes the exact formula, calculator, table and worked example.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://zackkaz.github.io/temperature/kelvin-to-celsius/">
-<meta property="og:title" content="Kelvin to Celsius — Convert Temperature"><meta property="og:description" content="Free Kelvin to Celsius converter. Exact temperature conversion with a live calculator and common values."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/temperature/kelvin-to-celsius/">
+<meta property="og:title" content="Kelvin to Celsius Converter (K to °C) | FreeConvert"><meta property="og:description" content="Convert kelvin to celsius. 1 K = -272.15 °C. Includes the exact formula, calculator, table and worked example."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/temperature/kelvin-to-celsius/"><meta property="og:site_name" content="FreeConvert">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kelvin to Celsius — Convert Temperature">
-<meta name="twitter:description" content="Free Kelvin to Celsius converter. Exact temperature conversion with a live calculator and common values.">
+<meta name="twitter:title" content="Kelvin to Celsius Converter (K to °C) | FreeConvert">
+<meta name="twitter:description" content="Convert kelvin to celsius. 1 K = -272.15 °C. Includes the exact formula, calculator, table and worked example.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script>window.__PAGE__={"cat": "temperature", "from": "kelvin", "to": "celsius"};</script><script src="/assets/cats.js"></script><script src="/assets/conv.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Temperature", "item": "https://zackkaz.github.io/temperature/"}, {"@type": "ListItem", "position": 3, "name": "Kelvin to Celsius", "item": "https://zackkaz.github.io/temperature/kelvin-to-celsius/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How to convert C to F?", "acceptedAnswer": {"@type": "Answer", "text": "°F = °C × 9/5 + 32. Example: 100°C = 212°F."}}, {"@type": "Question", "name": "What is absolute zero?", "acceptedAnswer": {"@type": "Answer", "text": "0 K = -273.15°C = -459.67°F."}}]}</script>
+<script>window.__PAGE__={"cat": "temperature", "from": "kelvin", "to": "celsius"};</script><script src="/assets/cats.js" defer></script><script src="/assets/conv.js" defer></script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Temperature", "item": "https://zackkaz.github.io/temperature/"}, {"@type": "ListItem", "position": 3, "name": "Kelvin to Celsius", "item": "https://zackkaz.github.io/temperature/kelvin-to-celsius/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I convert kelvin to celsius?", "acceptedAnswer": {"@type": "Answer", "text": "Subtract 273.15 from Kelvin. The formula is °C = K − 273.15."}}, {"@type": "Question", "name": "How many celsius are in 1 K?", "acceptedAnswer": {"@type": "Answer", "text": "1 K equals -272.15 °C."}}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -26,6 +27,7 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
@@ -34,27 +36,38 @@ if ("serviceWorker" in navigator) {
     <a href="/#calc">Calculators</a>
   </nav>
 </div></header>
-<main class="wrap">
-<div class="breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/temperature/">Temperature</a> › <a href="https://zackkaz.github.io/temperature/kelvin-to-celsius/">Kelvin to Celsius</a></div>
+<main class="wrap" id="main-content">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/temperature/">Temperature</a> › <a href="https://zackkaz.github.io/temperature/kelvin-to-celsius/">Kelvin to Celsius</a></nav>
 <h1>Kelvin to Celsius</h1>
-<p class="lede">Free Kelvin to Celsius converter. Exact temperature conversion with a live calculator and common values.</p>
+<p class="lede">Convert kelvin to celsius. 1 K = -272.15 °C. Includes the exact formula, calculator, table and worked example.</p>
 <div class="card conv">
   <div class="row">
-    <select id="from"></select>
-    <input id="val" type="number" inputmode="decimal" value="1">
+    <label class="sr-only" for="from">From unit</label>
+    <select id="from" aria-label="From unit"></select>
+    <label class="sr-only" for="val">Value to convert</label>
+    <input id="val" type="number" inputmode="decimal" aria-label="Value to convert" value="1">
     <span class="eq">=</span>
-    <select id="to"></select>
+    <label class="sr-only" for="to">To unit</label>
+    <select id="to" aria-label="To unit"></select>
   </div>
-  <div class="result" id="res">—</div>
+  <div class="result" id="res" aria-live="polite">—</div>
 </div>
-<div class="ad"><script type="text/javascript">atOptions = {key:"YOUR_ADSTERRA_KEY_HERE", format:"iframe", height:250, width:300, params:{}};(function(){var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];g.src="https://cdn.adsterra.com/asyncjs.php"; s.parentNode.insertBefore(g,s);})();</script></div>
+
+<h2>Kelvin to Celsius formula</h2>
+<div class="formula"><strong>°C = K − 273.15</strong><span>Subtract 273.15 from Kelvin.</span></div>
+<h2>Worked example</h2>
+<p>To convert 10 K to °C:</p>
+<p class="calculation">Using °C = K − 273.15: 10 K = -263.15 °C</p>
 <h2>Common Kelvin to Celsius conversions</h2>
 <table><thead><tr><th>Value</th><th>Celsius (°C)</th></tr></thead><tbody><tr><td><a href="/temperature/kelvin-to-celsius/1/">1 K</a></td><td>-272.15 °C</td></tr><tr><td><a href="/temperature/kelvin-to-celsius/5/">5 K</a></td><td>-268.15 °C</td></tr><tr><td><a href="/temperature/kelvin-to-celsius/10/">10 K</a></td><td>-263.15 °C</td></tr><tr><td><a href="/temperature/kelvin-to-celsius/50/">50 K</a></td><td>-223.15 °C</td></tr><tr><td><a href="/temperature/kelvin-to-celsius/100/">100 K</a></td><td>-173.15 °C</td></tr></tbody></table>
+<h2>Accuracy and rounding</h2>
+<p>The calculator keeps more precision internally than it displays. For everyday use, round the result to the number of decimal places your measurement supports. Keep extra digits for scientific or engineering calculations.</p>
+<p><a href="/temperature/celsius-to-kelvin/">Convert Celsius back to Kelvin →</a></p>
 <h2>Frequently asked questions</h2>
-<div class="faq"><details><summary>How to convert C to F?</summary><p>°F = °C × 9/5 + 32. Example: 100°C = 212°F.</p></details><details><summary>What is absolute zero?</summary><p>0 K = -273.15°C = -459.67°F.</p></details></div>
-<div class="ad"><a href="YOUR_MONETAG_SMARTLINK_URL_HERE" rel="nofollow"><script type="text/javascript" src="//slmonitor.net/script.js" async></script>Open exclusive offers</a></div>
+<div class="faq"><details><summary>How do I convert kelvin to celsius?</summary><p>Subtract 273.15 from Kelvin. The formula is °C = K − 273.15.</p></details><details><summary>How many celsius are in 1 K?</summary><p>1 K equals -272.15 °C.</p></details></div>
+
 <h2>More Temperature converters</h2>
-<div class="grid"><a class="chip" href="/temperature/celsius-to-celsius/">Celsius → Celsius</a><a class="chip" href="/temperature/fahrenheit-to-celsius/">Fahrenheit → Celsius</a></div>
+<div class="grid"><a class="chip" href="/temperature/fahrenheit-to-celsius/">Fahrenheit → Celsius</a></div>
 </main>
 <footer><div class="wrap">
   <div>© 2026 FreeConvert — free unit converters & calculators.</div>

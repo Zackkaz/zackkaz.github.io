@@ -4,18 +4,19 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Miles to Kilometers — Convert Length</title>
-<meta name="description" content="Free Miles to Kilometers converter. Exact length conversion with a live calculator and common values.">
+<title>Miles to Kilometers Converter (mi to km) | FreeConvert</title>
+<meta name="description" content="Convert miles to kilometers. 1 mi = 1.609344 km. Includes the exact formula, calculator, table and worked example.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://zackkaz.github.io/length/mile-to-kilometer/">
-<meta property="og:title" content="Miles to Kilometers — Convert Length"><meta property="og:description" content="Free Miles to Kilometers converter. Exact length conversion with a live calculator and common values."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/length/mile-to-kilometer/">
+<meta property="og:title" content="Miles to Kilometers Converter (mi to km) | FreeConvert"><meta property="og:description" content="Convert miles to kilometers. 1 mi = 1.609344 km. Includes the exact formula, calculator, table and worked example."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/length/mile-to-kilometer/"><meta property="og:site_name" content="FreeConvert">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Miles to Kilometers — Convert Length">
-<meta name="twitter:description" content="Free Miles to Kilometers converter. Exact length conversion with a live calculator and common values.">
+<meta name="twitter:title" content="Miles to Kilometers Converter (mi to km) | FreeConvert">
+<meta name="twitter:description" content="Convert miles to kilometers. 1 mi = 1.609344 km. Includes the exact formula, calculator, table and worked example.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script>window.__PAGE__={"cat": "length", "from": "mile", "to": "kilometer"};</script><script src="/assets/cats.js"></script><script src="/assets/conv.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Length", "item": "https://zackkaz.github.io/length/"}, {"@type": "ListItem", "position": 3, "name": "Miles to Kilometers", "item": "https://zackkaz.github.io/length/mile-to-kilometer/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many feet in a meter?", "acceptedAnswer": {"@type": "Answer", "text": "Exactly 3.28084 feet make 1 meter (1 m = 1 ÷ 0.3048 ft)."}}, {"@type": "Question", "name": "Which is longer, a mile or a kilometer?", "acceptedAnswer": {"@type": "Answer", "text": "A mile is longer: 1 mile = 1.60934 kilometers."}}]}</script>
+<script>window.__PAGE__={"cat": "length", "from": "mile", "to": "kilometer"};</script><script src="/assets/cats.js" defer></script><script src="/assets/conv.js" defer></script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Length", "item": "https://zackkaz.github.io/length/"}, {"@type": "ListItem", "position": 3, "name": "Miles to Kilometers", "item": "https://zackkaz.github.io/length/mile-to-kilometer/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I convert miles to kilometers?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply the miles value by 1.609344 to get kilometers. The formula is km = mi × 1.609344."}}, {"@type": "Question", "name": "How many kilometers are in 1 mi?", "acceptedAnswer": {"@type": "Answer", "text": "1 mi equals 1.609344 km."}}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -26,6 +27,7 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
@@ -34,27 +36,38 @@ if ("serviceWorker" in navigator) {
     <a href="/#calc">Calculators</a>
   </nav>
 </div></header>
-<main class="wrap">
-<div class="breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/length/">Length</a> › <a href="https://zackkaz.github.io/length/mile-to-kilometer/">Miles to Kilometers</a></div>
+<main class="wrap" id="main-content">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/length/">Length</a> › <a href="https://zackkaz.github.io/length/mile-to-kilometer/">Miles to Kilometers</a></nav>
 <h1>Miles to Kilometers</h1>
-<p class="lede">Free Miles to Kilometers converter. Exact length conversion with a live calculator and common values.</p>
+<p class="lede">Convert miles to kilometers. 1 mi = 1.609344 km. Includes the exact formula, calculator, table and worked example.</p>
 <div class="card conv">
   <div class="row">
-    <select id="from"></select>
-    <input id="val" type="number" inputmode="decimal" value="1">
+    <label class="sr-only" for="from">From unit</label>
+    <select id="from" aria-label="From unit"></select>
+    <label class="sr-only" for="val">Value to convert</label>
+    <input id="val" type="number" inputmode="decimal" aria-label="Value to convert" value="1">
     <span class="eq">=</span>
-    <select id="to"></select>
+    <label class="sr-only" for="to">To unit</label>
+    <select id="to" aria-label="To unit"></select>
   </div>
-  <div class="result" id="res">—</div>
+  <div class="result" id="res" aria-live="polite">—</div>
 </div>
-<div class="ad"><script type="text/javascript">atOptions = {key:"YOUR_ADSTERRA_KEY_HERE", format:"iframe", height:250, width:300, params:{}};(function(){var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];g.src="https://cdn.adsterra.com/asyncjs.php"; s.parentNode.insertBefore(g,s);})();</script></div>
+
+<h2>Miles to Kilometers formula</h2>
+<div class="formula"><strong>km = mi × 1.609344</strong><span>Multiply the miles value by 1.609344 to get kilometers.</span></div>
+<h2>Worked example</h2>
+<p>To convert 10 mi to km:</p>
+<p class="calculation">10 mi × 1.609344 = 16.09344 km</p>
 <h2>Common Miles to Kilometers conversions</h2>
 <table><thead><tr><th>Value</th><th>Kilometers (km)</th></tr></thead><tbody><tr><td><a href="/length/mile-to-kilometer/1/">1 mi</a></td><td>1.609344 km</td></tr><tr><td><a href="/length/mile-to-kilometer/5/">5 mi</a></td><td>8.04672 km</td></tr><tr><td><a href="/length/mile-to-kilometer/10/">10 mi</a></td><td>16.09344 km</td></tr><tr><td><a href="/length/mile-to-kilometer/50/">50 mi</a></td><td>80.4672 km</td></tr><tr><td><a href="/length/mile-to-kilometer/100/">100 mi</a></td><td>160.9344 km</td></tr></tbody></table>
+<h2>Accuracy and rounding</h2>
+<p>The calculator keeps more precision internally than it displays. For everyday use, round the result to the number of decimal places your measurement supports. Keep extra digits for scientific or engineering calculations.</p>
+<p><a href="/length/kilometer-to-mile/">Convert Kilometers back to Miles →</a></p>
 <h2>Frequently asked questions</h2>
-<div class="faq"><details><summary>How many feet in a meter?</summary><p>Exactly 3.28084 feet make 1 meter (1 m = 1 ÷ 0.3048 ft).</p></details><details><summary>Which is longer, a mile or a kilometer?</summary><p>A mile is longer: 1 mile = 1.60934 kilometers.</p></details></div>
-<div class="ad"><a href="YOUR_MONETAG_SMARTLINK_URL_HERE" rel="nofollow"><script type="text/javascript" src="//slmonitor.net/script.js" async></script>Open exclusive offers</a></div>
+<div class="faq"><details><summary>How do I convert miles to kilometers?</summary><p>Multiply the miles value by 1.609344 to get kilometers. The formula is km = mi × 1.609344.</p></details><details><summary>How many kilometers are in 1 mi?</summary><p>1 mi equals 1.609344 km.</p></details></div>
+
 <h2>More Length converters</h2>
-<div class="grid"><a class="chip" href="/length/meter-to-kilometer/">Meters → Kilometers</a><a class="chip" href="/length/kilometer-to-kilometer/">Kilometers → Kilometers</a><a class="chip" href="/length/centimeter-to-kilometer/">Centimeters → Kilometers</a><a class="chip" href="/length/millimeter-to-kilometer/">Millimeters → Kilometers</a><a class="chip" href="/length/micrometer-to-kilometer/">Micrometers → Kilometers</a><a class="chip" href="/length/yard-to-kilometer/">Yards → Kilometers</a><a class="chip" href="/length/foot-to-kilometer/">Feet → Kilometers</a><a class="chip" href="/length/inch-to-kilometer/">Inches → Kilometers</a><a class="chip" href="/length/nautical-mile-to-kilometer/">Nautical miles → Kilometers</a><a class="chip" href="/length/light-year-to-kilometer/">Light-years → Kilometers</a><a class="chip" href="/length/astronomical-unit-to-kilometer/">Astronomical units → Kilometers</a></div>
+<div class="grid"><a class="chip" href="/length/meter-to-kilometer/">Meters → Kilometers</a><a class="chip" href="/length/centimeter-to-kilometer/">Centimeters → Kilometers</a><a class="chip" href="/length/millimeter-to-kilometer/">Millimeters → Kilometers</a><a class="chip" href="/length/micrometer-to-kilometer/">Micrometers → Kilometers</a><a class="chip" href="/length/yard-to-kilometer/">Yards → Kilometers</a><a class="chip" href="/length/foot-to-kilometer/">Feet → Kilometers</a><a class="chip" href="/length/inch-to-kilometer/">Inches → Kilometers</a><a class="chip" href="/length/nautical-mile-to-kilometer/">Nautical miles → Kilometers</a><a class="chip" href="/length/light-year-to-kilometer/">Light-years → Kilometers</a><a class="chip" href="/length/astronomical-unit-to-kilometer/">Astronomical units → Kilometers</a></div>
 </main>
 <footer><div class="wrap">
   <div>© 2026 FreeConvert — free unit converters & calculators.</div>

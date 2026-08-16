@@ -4,18 +4,19 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Percentage Calculator</title>
-<meta name="description" content="Find what a percentage of a number is, instantly.">
+<title>Percentage Calculator | FreeConvert</title>
+<meta name="description" content="Find what a percentage of a number is, instantly. Includes the formula, a worked example and an instant browser-based result.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://zackkaz.github.io/calculators/percentage/">
-<meta property="og:title" content="Percentage Calculator"><meta property="og:description" content="Find what a percentage of a number is, instantly."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/percentage/">
+<meta property="og:title" content="Percentage Calculator | FreeConvert"><meta property="og:description" content="Find what a percentage of a number is, instantly. Includes the formula, a worked example and an instant browser-based result."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/percentage/"><meta property="og:site_name" content="FreeConvert">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Percentage Calculator">
-<meta name="twitter:description" content="Find what a percentage of a number is, instantly.">
+<meta name="twitter:title" content="Percentage Calculator | FreeConvert">
+<meta name="twitter:description" content="Find what a percentage of a number is, instantly. Includes the formula, a worked example and an instant browser-based result.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calc.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
+<script src="/assets/calc.js" defer></script>
 
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://zackkaz.github.io/#calc"}, {"@type": "ListItem", "position": 3, "name": "Percentage Calculator", "item": "https://zackkaz.github.io/calculators/percentage/"}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -26,6 +27,7 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
@@ -34,14 +36,21 @@ if ("serviceWorker" in navigator) {
     <a href="/#calc">Calculators</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/#calc">Calculators</a> › <a href="https://zackkaz.github.io/calculators/percentage/">Percentage Calculator</a></nav>
 <h1>Percentage Calculator</h1>
 <p class="lede">Find what a percentage of a number is, instantly.</p>
-<div class="card calc"><label>Percent (%)</label><input id='p' type='number' value='10'><label>Of number</label><input id='n' type='number' value='200'>
+<div class="card calc"><label for="p">Percent (%)</label><input id='p' type='number' value='10'><label for="n">Of number</label><input id='n' type='number' value='200'>
 <button class="btn" onclick="runCalc(pct,'pout')">Calculate</button>
-<div class="out" id="pout"></div>
-</div><div class="ad"><script type="text/javascript">atOptions = {key:"YOUR_ADSTERRA_KEY_HERE", format:"iframe", height:250, width:300, params:{}};(function(){var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];g.src="https://cdn.adsterra.com/asyncjs.php"; s.parentNode.insertBefore(g,s);})();</script></div>
-<h2>How it works</h2><p>Find what a percentage of a number is, instantly. This free calculator runs entirely in your browser — no data leaves your device.</p>
+<div class="out" id="pout" aria-live="polite"></div>
+</div>
+<h2>Formula</h2>
+<div class="formula"><strong>Result = (percentage ÷ 100) × number</strong><span>Percent means “per hundred.” Convert the percentage to a decimal by dividing by 100, then multiply by the original number.</span></div>
+<h2>Worked example</h2><p>10% of 200 = (10 ÷ 100) × 200 = 20.</p>
+<h2>How this calculator works</h2>
+<p>Find what a percentage of a number is, instantly. The calculation runs entirely in your browser, so the values you enter are not sent to a server.</p>
+<h2>Using the result</h2>
+<p>Check that your inputs use the intended units and assumptions. Round only the final result so intermediate rounding does not introduce avoidable error.</p>
 </main>
 <footer><div class="wrap">
   <div>© 2026 FreeConvert — free unit converters & calculators.</div>
