@@ -4,19 +4,18 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tip Calculator | FreeConvert</title>
-<meta name="description" content="Split a bill and calculate the tip per person. Includes the formula, a worked example and an instant browser-based result.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<title>Tip Calculator</title>
+<meta name="description" content="Split a bill and calculate the tip per person.">
 <link rel="canonical" href="https://zackkaz.github.io/calculators/tip/">
-<meta property="og:title" content="Tip Calculator | FreeConvert"><meta property="og:description" content="Split a bill and calculate the tip per person. Includes the formula, a worked example and an instant browser-based result."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/tip/"><meta property="og:site_name" content="FreeConvert">
+<meta property="og:title" content="Tip Calculator"><meta property="og:description" content="Split a bill and calculate the tip per person."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/tip/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tip Calculator | FreeConvert">
-<meta name="twitter:description" content="Split a bill and calculate the tip per person. Includes the formula, a worked example and an instant browser-based result.">
+<meta name="twitter:title" content="Tip Calculator">
+<meta name="twitter:description" content="Split a bill and calculate the tip per person.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calc.js" defer></script>
+<script src="/assets/calc.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://zackkaz.github.io/#calc"}, {"@type": "ListItem", "position": 3, "name": "Tip Calculator", "item": "https://zackkaz.github.io/calculators/tip/"}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -27,34 +26,53 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
     <a href="/">Home</a>
     <a href="/#categories">Converters</a>
     <a href="/#calc">Calculators</a>
+    <a href="/guides/">Guides</a>
   </nav>
 </div></header>
-<main class="wrap" id="main-content">
-<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/#calc">Calculators</a> › <a href="https://zackkaz.github.io/calculators/tip/">Tip Calculator</a></nav>
+<main class="wrap">
 <h1>Tip Calculator</h1>
 <p class="lede">Split a bill and calculate the tip per person.</p>
-<div class="card calc"><label for="b">Bill amount</label><input id='b' type='number' value='50'><label for="tp">Tip %</label><input id='tp' type='number' value='15'><label for="pe">People</label><input id='pe' type='number' value='2'>
+<div class="card calc"><label>Bill amount</label><input id='b' type='number' value='50'><label>Tip %</label><input id='tp' type='number' value='15'><label>People</label><input id='pe' type='number' value='2'>
 <button class="btn" onclick="runCalc(tip,'tout')">Calculate tip</button>
-<div class="out" id="tout" aria-live="polite"></div>
+<div class="out" id="tout"></div>
 </div>
-<h2>Formula</h2>
-<div class="formula"><strong>Tip = bill × (tip percentage ÷ 100); per person = (bill + tip) ÷ people</strong><span>Enter the pre-tip bill amount, desired tip percentage and number of people. The calculator shows the tip, total and equal share per person.</span></div>
-<h2>Worked example</h2><p>A 15% tip on a 50 bill is 7.50. Split between two people, the total is 28.75 each.</p>
-<h2>How this calculator works</h2>
-<p>Split a bill and calculate the tip per person. The calculation runs entirely in your browser, so the values you enter are not sent to a server.</p>
-<h2>Using the result</h2>
-<p>Check that your inputs use the intended units and assumptions. Round only the final result so intermediate rounding does not introduce avoidable error.</p>
+<h2>How it works</h2><p>Split a bill and calculate the tip per person. This free calculator runs entirely in your browser — no data leaves your device.</p>
 </main>
 <footer><div class="wrap">
-  <div>© 2026 FreeConvert — free unit converters & calculators.</div>
-  <div><a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots</a></div>
+  <div class="fcols">
+    <div>
+      <div class="fbrand">Free<span>Convert</span></div>
+      <p class="fmuted">Free, accurate unit converters and calculators. No sign-up, runs in your browser.</p>
+    </div>
+    <nav class="fnav" aria-label="Footer">
+      <div><h4>Converters</h4>
+        <a href="/length/">Length</a><a href="/weight/">Weight</a>
+        <a href="/temperature/">Temperature</a><a href="/volume/">Volume</a>
+        <a href="/digital/">Digital storage</a><a href="/speed/">Speed</a>
+      </div>
+      <div><h4>Learn</h4>
+        <a href="/guides/">Guides</a>
+        <a href="/guides/metric-vs-imperial/">Metric vs imperial</a>
+        <a href="/guides/temperature-conversions/">Temperature maths</a>
+        <a href="/guides/mass-vs-weight/">Mass vs weight</a>
+      </div>
+      <div><h4>Site</h4>
+        <a href="/about/">About</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </nav>
+  </div>
+  <div class="flegal">© 2026 FreeConvert. Conversions are calculated automatically; verify critical values independently.</div>
 </div></footer>
 </body>
 </html>

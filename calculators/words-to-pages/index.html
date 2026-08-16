@@ -4,19 +4,18 @@
 <script src="/monetag_tag.min.js" data-zone="270206" async data-cfasync="false"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Words to Pages Calculator | FreeConvert</title>
-<meta name="description" content="Estimate pages from a word count. Includes the formula, a worked example and an instant browser-based result.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<title>Words to Pages Calculator</title>
+<meta name="description" content="Estimate pages from a word count.">
 <link rel="canonical" href="https://zackkaz.github.io/calculators/words-to-pages/">
-<meta property="og:title" content="Words to Pages Calculator | FreeConvert"><meta property="og:description" content="Estimate pages from a word count. Includes the formula, a worked example and an instant browser-based result."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/words-to-pages/"><meta property="og:site_name" content="FreeConvert">
+<meta property="og:title" content="Words to Pages Calculator"><meta property="og:description" content="Estimate pages from a word count."><meta property="og:type" content="website"><meta property="og:url" content="https://zackkaz.github.io/calculators/words-to-pages/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Words to Pages Calculator | FreeConvert">
-<meta name="twitter:description" content="Estimate pages from a word count. Includes the formula, a worked example and an instant browser-based result.">
+<meta name="twitter:title" content="Words to Pages Calculator">
+<meta name="twitter:description" content="Estimate pages from a word count.">
 
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calc.js" defer></script>
+<script src="/assets/calc.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FreeConvert", "url": "https://zackkaz.github.io"}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zackkaz.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://zackkaz.github.io/#calc"}, {"@type": "ListItem", "position": 3, "name": "Words to Pages Calculator", "item": "https://zackkaz.github.io/calculators/words-to-pages/"}]}</script>
 <script>
 // Monetag service-worker push registration (file lives at BASE+/sw.js)
 if ("serviceWorker" in navigator) {
@@ -27,34 +26,53 @@ if ("serviceWorker" in navigator) {
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="/">Free<span>Convert</span></a>
   <nav class="top">
     <a href="/">Home</a>
     <a href="/#categories">Converters</a>
     <a href="/#calc">Calculators</a>
+    <a href="/guides/">Guides</a>
   </nav>
 </div></header>
-<main class="wrap" id="main-content">
-<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://zackkaz.github.io/">Home</a> › <a href="https://zackkaz.github.io/#calc">Calculators</a> › <a href="https://zackkaz.github.io/calculators/words-to-pages/">Words to Pages Calculator</a></nav>
+<main class="wrap">
 <h1>Words to Pages Calculator</h1>
 <p class="lede">Estimate pages from a word count.</p>
-<div class="card calc"><label for="w">Word count</label><input id='w' type='number' value='2500'><label for="pp">Words per page</label><input id='pp' type='number' value='500'>
+<div class="card calc"><label>Word count</label><input id='w' type='number' value='2500'><label>Words per page</label><input id='pp' type='number' value='500'>
 <button class="btn" onclick="runCalc(wtp,'wout')">Estimate</button>
-<div class="out" id="wout" aria-live="polite"></div>
+<div class="out" id="wout"></div>
 </div>
-<h2>Formula</h2>
-<div class="formula"><strong>Estimated pages = word count ÷ words per page</strong><span>Actual page count depends on font, spacing, margins, headings and images. Change the words-per-page value to match your document format.</span></div>
-<h2>Worked example</h2><p>2,500 words at 500 words per page is approximately 5 pages.</p>
-<h2>How this calculator works</h2>
-<p>Estimate pages from a word count. The calculation runs entirely in your browser, so the values you enter are not sent to a server.</p>
-<h2>Using the result</h2>
-<p>Check that your inputs use the intended units and assumptions. Round only the final result so intermediate rounding does not introduce avoidable error.</p>
+<h2>How it works</h2><p>Estimate pages from a word count. This free calculator runs entirely in your browser — no data leaves your device.</p>
 </main>
 <footer><div class="wrap">
-  <div>© 2026 FreeConvert — free unit converters & calculators.</div>
-  <div><a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots</a></div>
+  <div class="fcols">
+    <div>
+      <div class="fbrand">Free<span>Convert</span></div>
+      <p class="fmuted">Free, accurate unit converters and calculators. No sign-up, runs in your browser.</p>
+    </div>
+    <nav class="fnav" aria-label="Footer">
+      <div><h4>Converters</h4>
+        <a href="/length/">Length</a><a href="/weight/">Weight</a>
+        <a href="/temperature/">Temperature</a><a href="/volume/">Volume</a>
+        <a href="/digital/">Digital storage</a><a href="/speed/">Speed</a>
+      </div>
+      <div><h4>Learn</h4>
+        <a href="/guides/">Guides</a>
+        <a href="/guides/metric-vs-imperial/">Metric vs imperial</a>
+        <a href="/guides/temperature-conversions/">Temperature maths</a>
+        <a href="/guides/mass-vs-weight/">Mass vs weight</a>
+      </div>
+      <div><h4>Site</h4>
+        <a href="/about/">About</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/contact/">Contact</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </nav>
+  </div>
+  <div class="flegal">© 2026 FreeConvert. Conversions are calculated automatically; verify critical values independently.</div>
 </div></footer>
 </body>
 </html>
